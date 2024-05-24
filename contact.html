@@ -4,10 +4,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Construction HTML-5 Template</title>
-    <meta name="description" content="">
+    <title>Better all construction company LTD | Contact us</title>
+    <meta name="description" content="Dail us on +(250) 788-855-191 or Whatsapp us on +(250) 788-855-191 or mail us on  betterallconstruction@gmail.com ">
+    <link rel="canonical" href="/contact.html"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <link
+    rel="shortcut icon"
+    type="image/x-icon"
+    href="assets/img/favicon.ico"
+  />
 
    <!-- CSS here -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -37,7 +42,7 @@
                                 <div class="header-info-left">
                                     <ul>     
                                         <li><a href="tel:+250788855191">+(250) 788-855-191</a></li>
-                                    <li><a href="email:betterallconstruction@gmail.com">betterallconstruction@gmail.com</a></li>
+                                    <li><a href="mailto:betterallconstruction@gmail.com">betterallconstruction@gmail.com</a></li>
                                         <li>Mon - Sat 8:00 - 17:30, Sunday - CLOSED</li>
                                     </ul>
                                 </div>
@@ -102,7 +107,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap pt-100">
-                            <h2>Contact</h2>
+                            <h2>Contact us</h2>
                             <nav aria-label="breadcrumb ">
                                 <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -124,7 +129,7 @@
                         <h2 class="contact-title">Get in Touch</h2>
                     </div>
                     <div class="col-lg-8">
-                        <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+                        <form class="form-contact contact_form"  >
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group">
@@ -147,10 +152,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-group mt-3">
-                                <button type="submit" class="button button-contactForm boxed-btn">Send</button>
-                            </div>
+                           
                         </form>
+                    
                     </div>
                     <div class="col-lg-3 offset-lg-1">
                         <div class="media contact-info">
@@ -177,18 +181,29 @@
                     </div>
                 </div>
             </div>
-            <center><a href="#" class="btn red-btn2">Submit query</a></center>
+            <center><a id="send_btn" class="btn red-btn2">Submit query</a></center>
         </section>
     <!-- ================ contact section end ================= -->
    <common-footer></common-footer>
     <!-- JS here -->
 	
 		<!-- All JS Custom Plugins Link Here here -->
+        <script>
+         let name=document.getElementById('name') ,
+          email= document.getElementById('email'),
+          subject =document.getElementById('subject'),
+          message=  document.getElementById('message'),
+           sendBtn=document.getElementById('send_btn');
+           sendBtn.onclick=()=>{
+            setTimeout(()=>{name.value='';email.value='';subject.value='';message.value='';},200)
+            window.open(`https://api.whatsapp.com/send?phone=250790457824&text=Hi%20%2C%20I%20am%20${name.value}%0AMy%20email%20%F0%9F%93%A9%20is%20${email.value}%0Athis%20is%20my%20request%20%${message.value}0A`,'_blank')}
+        </script>
         <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 		<!-- Jquery, Popper, Bootstrap -->
 		<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
         <script src="./assets/js/popper.min.js"></script>
         <script src="./assets/js/bootstrap.min.js"></script>
+
 	    <!-- Jquery Mobile Menu -->
         <script src="./assets/js/jquery.slicknav.min.js"></script>
 
@@ -207,17 +222,12 @@
 		<script src="./assets/js/jquery.sticky.js"></script>
         <script src="./assets/js/jquery.magnific-popup.js"></script>
 
-        <!-- contact js -->
-        <script src="./assets/js/contact.js"></script>
-        <script src="./assets/js/jquery.form.js"></script>
-        <script src="./assets/js/jquery.validate.min.js"></script>
-        <script src="./assets/js/mail-script.js"></script>
-        <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-        
+      
 		<!-- Jquery Plugins, main Jquery -->
-        <script type="module" src="./assets/js/footer"	
+        <script type="module" src="./assets/js/footer.js"></script>	
         <script src="./assets/js/plugins.js"></script>
         <script src="./assets/js/main.js"></script>
+       
         
     </body>
     
