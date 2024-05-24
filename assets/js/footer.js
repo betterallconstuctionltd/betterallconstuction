@@ -41,11 +41,8 @@ class CommonFooter extends HTMLElement {
                                      <div class="footer-pera">
                                          <p class="info1"> Kigali City,
                                              Gasabo district, Rugando area </p>
-<<<<<<< HEAD
                                          <p class="info1"> Mathias House</p>
                                          <p class="info1"> 24R8+486, RN 5 Rd, Next to Prince House, NR5, Kigali</p>
-=======
->>>>>>> 0e7029047c2581367cce2dfaa86e061cc5e4977f
                                      </div>
                                      <ul>
                                          <li><a href="tel:+250788855191">Phone: +250788855191</a></li>
