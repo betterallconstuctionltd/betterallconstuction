@@ -47,6 +47,7 @@ class CommonFooter extends HTMLElement {
                                      <ul>
                                          <li><a href="tel:+250788855191">Phone: +250788855191</a></li>
                                          <li><a href="tel:+250788821910">Cell:  +250788821910 </a></li>
+                                          <li><a href="https://www.youtube.com/channel/UCH3FYhcgnho7DMdkIBaH53A"><i class="fab fa-youtube"></i></a> <a href="https://www.instagram.com/betterallconstruction"><i class="fab fa-instagram"></i></a> <a href="https://www.linkedin.com/in/betterall-construction-774551312"><i class="fab fa-linkedin-in"></i></a> <a href="https://wa.me/250788855191?text=hi"><i class="fab fa-whatsapp"></i></a></li>
                                      </ul>
                                  </div>
                              </div>
@@ -71,7 +72,7 @@ class CommonFooter extends HTMLElement {
                          <div class="col-xl-12 ">
                              <div class="footer-copy-right">
                                  <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <i class="fa fa-heart" aria-hidden="true"></i> by Munaziri Bienaime
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is built by <i class="fa fa-heart" aria-hidden="true"></i> by Munaziri Bienaime
                              </div>
                          </div>
                      </div>
